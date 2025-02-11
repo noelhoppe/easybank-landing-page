@@ -1,0 +1,106 @@
+.articles__title {
+    font-size: var(--size-3xl);
+    color: var(--clr-primary-dark-blue);
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+.articles-card__title {
+    font-size: var(--size-xl);
+    color: var(--clr-primary-dark-blue);
+}
+.articles-card__title:hover {
+    color: var(--clr-primary-lime-green);
+}
+
+.articles-card__description {
+    color: var(--clr-neutral-grayish-blue);
+    max-width: 60ch;
+}
+
+.articles-card__author {
+    color: var(--clr-neutral-grayish-blue);
+    font-size: var(--size-base);
+    letter-spacing: -0.05em;
+    font-weight: 300;
+}
+
+.articles-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.articles-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 0 250px;
+}
+
+.articles-card__img {
+    width: 100%;
+    height: auto;
+}
+
+.articles-card__content-wrapper {
+    padding: 2rem;
+}
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .articles__title {
+        font-size: var(--size-4xl);
+    }
+    .articles-card__title {
+        font-size: var(--size-2xl);
+    }
+    .articles-card__author {
+        font-size: var(--size-lg);
+    }
+    .articles-card__description {
+        font-size: var(--size-xl);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .articles__title {
+        font-size: var(--size-5xl);
+    }
+    .articles-card__title {
+        font-size: var(--size-3xl);
+    }
+    .articles-card__author {
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .articles__title {
+        font-size: var(--size-6xl);
+    }
+    .articles-card__description {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .articles__title {
+        font-size: var(--size-7xl);
+    }
+    .articles-card__description {
+        font-size: var(--size-3xl);
+    }
+    .articles-card__author {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* xl */
+/*@media (min-width: 1280px) { }*/
+
+/* 2xl */
+/*@media (min-width: 1536px) {}*/

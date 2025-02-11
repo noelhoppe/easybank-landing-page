@@ -1,0 +1,119 @@
+.features {
+    background-color: var(--clr-neutral-very-light-gray);
+}
+
+.features__title {
+    font-size: var(--size-3xl);
+    color: var(--clr-primary-dark-blue);
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+.features__description {
+    color: var(--clr-neutral-grayish-blue);
+    max-width: 60ch;
+    font-size: var(--size-base);
+    letter-spacing: -0.025em;
+    margin-bottom: .5em;
+}
+
+.features-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.features-card {
+    flex: 1 0 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features-card__title {
+    color: var(--clr-primary-dark-blue);
+    font-size: var(--size-2xl);
+    font-weight: 400;
+}
+.features-card__description {
+    color: var(--clr-neutral-grayish-blue);
+    max-width: 60ch;
+}
+
+.features-card__icon {
+    width: var(--size-6xl);
+    height: var(--size-6xl);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .features__title {
+        font-size: var(--size-4xl);
+    }
+    .features__description {
+        font-size: var(--size-xl);
+    }
+    .features-card__title {
+        font-size: var(--size-3xl);
+    }
+    .features-card__description {
+        font-size: var(--size-xl);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .features__title {
+        font-size: var(--size-5xl);
+    }
+    .features-card__title {
+        font-size: var(--size-4xl);
+    }
+    .features-card__icon {
+        width: var(--size-7xl);
+        height: var(--size-7xl);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .features__title {
+        font-size: var(--size-6xl);
+    }
+    .features__description {
+        font-size: var(--size-2xl);
+    }
+    .features-card__description {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .features__title {
+        font-size: var(--size-7xl);
+    }
+    .features__description {
+        font-size: var(--size-3xl);
+    }
+    .features-card__icon {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+    .features-card__description {
+        font-size: var(--size-3xl);
+    }
+}
+
+/* xl */
+/*@media (min-width: 1280px) { }*/
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .features-card {
+        text-align: left;
+        align-items: flex-start;
+    }
+}

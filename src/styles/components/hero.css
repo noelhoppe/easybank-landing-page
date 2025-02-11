@@ -1,0 +1,119 @@
+.hero__img {
+    position: relative;
+    top: -120px;
+    margin: 0 auto;
+    background-image: url("/public/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: var(--size-4xl);
+    font-weight: 500;
+    color: var(--clr-primary-dark-blue);
+}
+
+.hero__description {
+    color: var(--clr-neutral-grayish-blue);
+    max-width: 60ch;
+    font-size: var(--size-base);
+    letter-spacing: -0.025em;
+}
+
+.hero__btn {
+    max-width: 400px;
+    font-size: var(--size-base);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .hero__content {
+        gap: 1.5rem;
+    }
+    .hero__title {
+        font-size: var(--size-5xl);
+    }
+    .hero__description {
+        font-size: var(--size-lg);
+    }
+    .hero__btn {
+        font-size: var(--size-lg);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .hero__content {
+        gap: 2rem;
+    }
+    .hero__title {
+        font-size: var(--size-6xl);
+    }
+    .hero__description {
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .hero__content {
+        gap: 2.5rem;
+    }
+    .hero__title {
+        font-size: var(--size-7xl);
+    }
+    .hero__description {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .hero__title {
+        font-size: var(--size-8xl);
+    }
+    .hero__description {
+        font-size: var(--size-3xl);
+    }
+    .hero__btn {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+    .hero__content {
+        order: 1;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .hero__img {
+        order: 2;
+        right: -40px;
+        background-image: url("/public/bg-intro-desktop.svg");
+        margin: 0 0 0 auto;
+    }
+    .hero__btn {
+        font-size: var(--size-xl);
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .hero__btn {
+        font-size: var(--size-2xl);
+    }
+}
